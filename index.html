@@ -1111,10 +1111,10 @@
                 });
             } else if (spellToCast.type === 'timestop') {
                 game.combat.enemy.frozen = true;
-                game.combat.enemy.timestopTurns = 2;
+                game.combat.enemy.timestopTurns = 3;
                 if (game.combat.secondEnemy) {
                     game.combat.secondEnemy.frozen = true;
-                    game.combat.secondEnemy.timestopTurns = 2;
+                    game.combat.secondEnemy.timestopTurns = 4;
                 }
                 speakSequence([
                     `You cast Time Stop!`,
@@ -2398,6 +2398,6 @@
         micButton.addEventListener('contextmenu', (e) => e.preventDefault());
     </script>
 </body>
-
 </html>
+
 
